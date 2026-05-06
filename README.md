@@ -1,1 +1,85 @@
-# Resume
+Class Modifiers
+
+sealed : hierarki tertutup, pattern matching
+
+base : hanya bisa di-extend, tidak di-implement dari luar
+
+final : tidak bisa di-extend/di-implement dari luar
+
+Contoh cepat: https://dartpad.dev/a0c524a565c4f3100d4311a452ea39b8
+
+Pengantar Generic
+
+Apa itu Generic? Fitur untuk membuat kode yang bekerja dengan berbagai tipe
+data
+
+Analog: Kotak penyimpanan yang bisa menampung apa saja, tapi dengan label
+tipe
+
+Manfaat:
+
+i. Type safety (keamanan tipe)
+
+ii. Code reusability (penggunaan ulang)
+
+iii. Compile-time checking
+
+Masalah tanpa Generic: https://dartpad.dev/9ebdb74df71b55f13d893f7fa0cf6f20
+
+Solusi dengan Generic: https://dartpad.dev/c51626807697528fdbb189d54e8a56c9
+
+Sintaks Generic Dasar
+
+Type parameter: <T> , <E> , <K, V>
+  
+Konvensi:
+  
+T = Type
+  
+E = Element (collection)
+K = Key
+V = Value
+R = Return type
+
+Contoh syntax Generic pada class: https://dartpad.dev/301442cfb9e457ada45b8037ef4a19fc
+  
+Contoh syntax pada function: https://dartpad.dev/b4217ddded5fffa1139f04992d903a79
+
+Contoh kelas box <T>: https://dartpad.dev/927f11913af967f3955c84ac2698fb9b
+  
+Multiple types marameters: https://dartpad.dev/a5332ec917553fe5f74bd741bde0bf68
+  
+Menggabungkan dua nilai dengan tipe yang berbeda: https://dartpad.dev/38afb6b2091ccba215e133f3083d90e4
+  
+Generic dengan extends: https://dartpad.dev/191942115186cae9e5a596ca3a06d1bd
+  
+Type Inference: https://dartpad.dev/662710cbfc9fbd91c215d5330081534c
+
+Pembatasan Tipe dan manfaatnya
+  
+Keamanan Tipe yang Lebih Baik: Memastikan bahwa kode hanya bekerja
+  
+dengan tipe data yang kompatibel, sehingga mengurangi risiko runtime error
+  
+Peningkatan Keterbacaan Kode: Membuat kode lebih jelas dan mudah dibaca
+  
+karena kita dapat melihat tipe data yang diharapkan secara eksplisit.
+  
+Memungkinkan Penggunaan Method dari Tipe Data Tertentu: Memungkinkan
+  
+kita untuk memanggil method yang spesifik untuk tipe data yang dibatasi
+  
+Mencegah Penggunaan Tipe Data yang Tidak Sesuai: Mencegah penggunaan
+  
+tipe data yang tidak sesuai dengan logika kode.
+  
+Membantu dalam Desain dan Implementasi: Membantu kita dalam merancang
+  
+dan mengimplementasikan kelas dan fungsi generic dengan lebih terstruktur dan
+terdefinisi
+
+Pembatasan tipe interface dan class: https://dartpad.dev/c48f8f9f13bd909dbd10b1f6cfecb927
+  
+Pembatasan tipe dengan class abstract: https://dartpad.dev/87cfe4e2577752041b840fa6e17f9ad4 , https://dartpad.dev/df657777ef4bdf33da2d83e83d4dae68
+
+Studi kasus -Cache generic: https://dartpad.dev/74965d8226517f1e8018c57753b8dde2
